@@ -1,0 +1,76 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Seite-1" id="M9C4pL-kCdm3cY_-8DiB">
+    <mxGraphModel dx="740" dy="549" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Sf3W7xbxGiFiYsm62jUy-60" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="FactMSP" vertex="1">
+          <mxGeometry height="270" width="160" x="340" y="575" as="geometry" />
+        </mxCell>
+        <mxCell id="Sf3W7xbxGiFiYsm62jUy-61" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="ZeitID (FK)&lt;br&gt;LieferantID (FK)&lt;br&gt;AnfrageID (FK)&lt;br&gt;KandidatID (FK)&lt;br&gt;HiringManagerID (FK)&lt;br&gt;&lt;br&gt;TimeToHireDays&lt;br&gt;TagessatzAngebot&lt;br&gt;TagessatzFinal&lt;br&gt;DeltaAngebotZuMax&lt;br&gt;DeltaFinalZuMax&lt;br&gt;AnzahlÜbermittlungen&lt;br&gt;AnzahlInterviews&lt;br&gt;AnzahlSelected&lt;br&gt;WorkOrderCount" vertex="1">
+          <mxGeometry height="260" width="146" x="353" y="595" as="geometry" />
+        </mxCell>
+        <mxCell id="Sf3W7xbxGiFiYsm62jUy-62" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="DimZeit" vertex="1">
+          <mxGeometry height="153" width="160" x="561" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="Sf3W7xbxGiFiYsm62jUy-63" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="ZeitID (PK)&lt;br&gt;&lt;br&gt;Datum&lt;br&gt;Tag&lt;br&gt;Woche&lt;br&gt;Monat&lt;br&gt;Quartal&lt;br&gt;Jahr" vertex="1">
+          <mxGeometry height="140" width="144" x="576" y="553" as="geometry" />
+        </mxCell>
+        <mxCell id="Sf3W7xbxGiFiYsm62jUy-64" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="DimLieferant" vertex="1">
+          <mxGeometry height="114" width="160" x="340" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="Sf3W7xbxGiFiYsm62jUy-65" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="LieferantID (PK)&lt;br&gt;&lt;br&gt;Lieferantenname&lt;br&gt;Ansprechpartner&lt;br&gt;E-Mail" vertex="1">
+          <mxGeometry height="90" width="149" x="351" y="424" as="geometry" />
+        </mxCell>
+        <mxCell id="Sf3W7xbxGiFiYsm62jUy-66" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="DimAnfrage" vertex="1">
+          <mxGeometry height="140" width="160" x="121" y="535" as="geometry" />
+        </mxCell>
+        <mxCell id="Sf3W7xbxGiFiYsm62jUy-67" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="AnfrageID (PK)&lt;br&gt;&lt;br&gt;Titel&lt;br&gt;AnzahlPositionen&lt;br&gt;GewünschterStart&lt;br&gt;MaximalerTagessatz&lt;br&gt;Status" vertex="1">
+          <mxGeometry height="120" width="152" x="128" y="555" as="geometry" />
+        </mxCell>
+        <mxCell id="Sf3W7xbxGiFiYsm62jUy-68" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="DimKandidat" vertex="1">
+          <mxGeometry height="114" width="161" x="120" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="Sf3W7xbxGiFiYsm62jUy-69" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="KandidatID (PK)&lt;br&gt;&lt;br&gt;Name&lt;br&gt;E-Mail&lt;br&gt;Skillset" vertex="1">
+          <mxGeometry height="90" width="154" x="126" y="814" as="geometry" />
+        </mxCell>
+        <mxCell id="Sf3W7xbxGiFiYsm62jUy-70" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="DimHiringManager" vertex="1">
+          <mxGeometry height="113" width="160" x="561" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="Sf3W7xbxGiFiYsm62jUy-71" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="HiringManagerID (PK)&lt;br&gt;&lt;br&gt;Name&lt;br&gt;E-Mail&lt;br&gt;Abteilung" vertex="1">
+          <mxGeometry height="90" width="148" x="572" y="813" as="geometry" />
+        </mxCell>
+        <mxCell id="Sf3W7xbxGiFiYsm62jUy-72" edge="1" parent="1" source="Sf3W7xbxGiFiYsm62jUy-60" style="endArrow=none;html=1;rounded=0;entryX=0.463;entryY=1.003;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryPerimeter=0;" target="Sf3W7xbxGiFiYsm62jUy-65" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="645" as="sourcePoint" />
+            <mxPoint x="450" y="595" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sf3W7xbxGiFiYsm62jUy-73" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="Sf3W7xbxGiFiYsm62jUy-67" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="340" y="671" as="sourcePoint" />
+            <mxPoint x="290" y="655" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sf3W7xbxGiFiYsm62jUy-74" edge="1" parent="1" source="Sf3W7xbxGiFiYsm62jUy-69" style="endArrow=none;html=1;rounded=0;exitX=1.005;exitY=0.421;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="270" y="816" as="sourcePoint" />
+            <mxPoint x="340" y="802" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sf3W7xbxGiFiYsm62jUy-75" edge="1" parent="1" source="Sf3W7xbxGiFiYsm62jUy-62" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="191" y="776" as="sourcePoint" />
+            <mxPoint x="501" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sf3W7xbxGiFiYsm62jUy-76" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=1.007;entryY=0.791;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="561" y="850" as="sourcePoint" />
+            <mxPoint x="502.30899999999997" y="800.6599999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
