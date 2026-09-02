@@ -1,4 +1,0 @@
-SELECT COUNT(*) AS FactMSP FROM dwh.FactMSP;
-
-SELECT TOP 20 *
-FROM dwh.FactMSP;
